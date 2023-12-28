@@ -1,9 +1,13 @@
 {% extends 'base.html.twig' %} {% block title %}{{ title }}{% endblock %} {% block body %}
 
 <!-- Titular principal de la página -->
-<h1 class="display-4">{{ title }}</h1>
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center align-items-center text-center">
+        <div class="col">
+            <h1 class="display-4">{{ title }}</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
         {% for project in projects %}
         <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem">
