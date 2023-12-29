@@ -12,7 +12,7 @@ class CareerController extends AbstractController
     public function index(): Response
     {
         return $this->render('career/career.html.twig', [
-            'title' => 'Mi trayectoria'
+            'title' => 'Experiencia Laboral'
         ]);
     }
 }

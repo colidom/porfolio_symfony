@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row justify-content-center align-items-center text-center">
                 <div class="col-md-8">
-                    <h1 class="display-4 text-capitalize fs-1">¡Bienvenido a mi Porfolio!</h1>
+                    <h1 class="display-4 text-capitalize fs-1">{{ title }}</h1>
                     <hr />
                     <p>Soy Carlos, desarrollador de software apasionado por la creación de soluciones innovadoras y efectivas.</p>
                     <p>
@@ -33,7 +33,6 @@
                     <ul class="list-group">
                         <li class="list-group-item">HTML5, CSS3, JavaScript</li>
                         <li class="list-group-item">React, Angular, Vue.js</li>
-                        <!-- Añade más habilidades -->
                     </ul>
                 </div>
                 <div class="col-md-6">
@@ -41,7 +40,6 @@
                     <ul class="list-group">
                         <li class="list-group-item">Node.js, Python, PHP</li>
                         <li class="list-group-item">Bases de datos SQL y NoSQL</li>
-                        <!-- Añade más habilidades -->
                     </ul>
                 </div>
             </div>
@@ -54,8 +52,7 @@
                 <div class="col-md-8 text-center">
                     <h2>¿Listo para trabajar juntos?</h2>
                     <p>¡Ponte en contacto conmigo para discutir tu próximo proyecto!</p>
-                    <!-- Aquí puedes agregar un botón o enlace de contacto -->
-                    <a href="#contacto" class="btn btn-primary btn-lg">¡Contáctame!</a>
+                    <a href="{{ path('contact') }}" class="btn btn-primary btn-lg">¡Contáctame!</a>
                 </div>
             </div>
         </div>

@@ -1,31 +1,23 @@
-{% extends 'base.html.twig' %} {% block title %}{{ title }}{% endblock %} {% block body %}
-
-<!-- Titular principal de la página -->
-<div class="container">
-    <div class="row justify-content-center align-items-center text-center">
-        <div class="col">
+{% extends 'base.html.twig' %} {% block title %}Proyectos - Porfolio Personal{% endblock %} {% block body %}
+<main>
+    <section class="proyectos py-5">
+        <div class="container">
             <h1 class="display-4 text-capitalize fs-1">{{ title }}</h1>
             <hr />
-        </div>
-    </div>
-    <div class="row justify-content-center mt-5">
-        {% for project in projects %}
-        <div class="col-md-4 mb-3">
-            <div class="card" style="width: 18rem">
-                <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
-                    <img src="{{ project.image }}" class="img-fluid" />
-                    <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                    </a>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {% for project in projects %}
+                <div class="col">
+                    <div class="card">
+                        <img src="{{ project.image }}" class="card-img-top" alt="{{ project.title }}" />
+                        <div class="card-body">
+                            <h5 class="card-title">{{ project.title }}</h5>
+                            <p class="card-text">{{ project.description }}</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">{{ project.title }}</h5>
-                    <p class="card-text">{{ project.description }}</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
-        {% endfor %}
-    </div>
-</div>
-
-{% include 'pagination.html.twig' %} {% endblock %}
+    </section>
+</main>
+{% endblock %}
