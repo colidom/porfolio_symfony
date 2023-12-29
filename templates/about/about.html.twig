@@ -1,11 +1,36 @@
-{% extends 'base.html.twig' %} {% block title %}{{ title }}{% endblock %} {% block body %}
-<div class="container">
-    <div class="row justify-content-center align-items-center text-center">
-        <div class="col">
-            <h1 class="display-4 text-capitalize fs-1">{{ title }}</h1>
-            <hr />
+{% extends 'base.html.twig' %} {% block title %}Sobre Mí - Porfolio Personal{% endblock %} {% block body %}
+<main>
+    <section class="sobre-mi py-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center">
+                    <h2 class="mb-4">Acerca de Mí</h2>
+                    <p>
+                        Me llamo Carlos y soy un apasionado del Desarrollo de Software. Busco constantemente aprender y superarme en todos los
+                        aspectos de mi vida, tanto profesional como personal. 🚀
+                    </p>
+                    <p>
+                        Creo firmemente que el conocimiento no tiene límites y me esfuerzo por aprender algo nuevo cada día, siempre buscando mejorar
+                        mis métodos y soluciones para ser más eficiente y efectivo. 📚
+                    </p>
+                    <p>
+                        Además de la tecnología, disfruto pasando tiempo con mis mascotas, familia y amigos. Me encanta bailar salsa & bachata,
+                        viajar, hacer rutas en moto y disfrutar de la naturaleza y las cosas hermosas de la vida. 🐶🏔️
+                    </p>
+                    <p>
+                        Valores como empatía, solidaridad, don de gente, trabajo duro, honestidad y proactividad son fundamentales en mi vida y
+                        definen mi personalidad. 🤝💪
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <img src="/assets/img/avatar.png" alt="avatar rounded" class="img-fluid rounded-pill" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row justify-content-center mt-5"></div>
-</div>
+    </section>
+</main>
 {% endblock %}
