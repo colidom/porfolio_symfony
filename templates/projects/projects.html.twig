@@ -8,7 +8,16 @@
                 {% for project in projects %}
                 <div class="col">
                     <div class="card">
-                        <img src="{{ project.image }}" class="card-img-top" alt="{{ project.title }}" />
+                        <div class="card-img-top-container">
+                            <img
+                                src="{{ project.image }}"
+                                class="card-img-top"
+                                alt="{{ project.title }}"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="{{ project.title }}"
+                            />
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">{{ project.title }}</h5>
                             <p class="card-text">{{ project.description }}</p>
@@ -20,4 +29,29 @@
         </div>
     </section>
 </main>
+
+<style>
+    .card-img-top-container {
+        overflow: hidden;
+        position: relative;
+        height: 200px; /* Altura de la imagen dentro del card */
+    }
+
+    .card-img-top {
+        transition: transform 0.5s;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $(".card-img-top").hover(
+            function () {
+                $(this).css("transform", "scale(1.1)");
+            },
+            function () {
+                $(this).css("transform", "scale(1)");
+            }
+        );
+    });
+</script>
 {% endblock %}
