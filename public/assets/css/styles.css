@@ -1,6 +1,6 @@
 :root {
     --main-bg-color: brown;
-    --secondary--bg-color: #f0f0f0;
+    --secondary-bg-color: #f0f0f0;
     --main-gradiant: rgba(0, 0, 0, 0.05);
     --icon-instagram: #ac2bac;
     --icon-twitter: #333333;
@@ -34,7 +34,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary--bg-color);
+    background-color: var(--secondary-bg-color);
 }
 
 /* CONTACTO */
