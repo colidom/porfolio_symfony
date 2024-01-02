@@ -8,3 +8,12 @@ $(document).ready(function () {
         }
     );
 });
+
+window.addEventListener("scroll", function () {
+    const scrollBtn = document.querySelector(".back-to-top");
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+});
