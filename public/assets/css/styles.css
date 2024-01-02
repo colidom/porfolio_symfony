@@ -7,6 +7,16 @@
     --icon-github: #333333;
 }
 /* NAVBAR */
+/* PROYECTOS */
+.card-img-top-container {
+    overflow: hidden;
+    position: relative;
+    height: 200px; /* Altura de la imagen dentro del card */
+}
+
+.card-img-top {
+    transition: transform 0.5s;
+}
 
 /* CONTACTO */
 .contacto h4 {
