@@ -7,6 +7,11 @@
     --icon-github: #333333;
 }
 /* NAVBAR */
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
 /* PROYECTOS */
 .card-img-top-container {
     overflow: hidden;
