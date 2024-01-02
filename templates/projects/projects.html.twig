@@ -5,8 +5,8 @@
             <h1 class="display-4 text-capitalize fs-1">{{ title }}</h1>
             <hr />
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                {% for key, project in projects %} {% if loop.index <= 3 %}
-                <div class="col-md-4 mb-4">
+                {% for project in projects %}
+                <div class="col-md-{% if project.large is defined and project.large %}8{% else %}4{% endif %} mb-3">
                     <div class="card">
                         <div class="card-img-top-container">
                             {% if project.image is defined %}
@@ -28,61 +28,10 @@
                         </div>
                     </div>
                 </div>
-                {% else %} {% if loop.index == 4 %}
-                <div class="col-md-8 mb-4">
-                    <div class="card">
-                        <div class="card-img-top-container">
-                            {% if project.image is defined %}
-                            <img
-                                src="{{ project.image }}"
-                                class="card-img-top"
-                                alt="{{ project.title }}"
-                                data-toggle="tooltip"
-                                data-placement="bottom"
-                                title="{{ project.title }}"
-                            />
-                            {% else %}
-                            <div class="no-image-placeholder">No Image</div>
-                            {% endif %}
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">{{ project.title }}</h5>
-                            <p class="card-text">{{ project.description }}</p>
-                        </div>
-                    </div>
-                </div>
-                {% else %}
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-img-top-container">
-                            {% if project.image is defined %}
-                            <img
-                                src="{{ project.image }}"
-                                class="card-img-top"
-                                alt="{{ project.title }}"
-                                data-toggle="tooltip"
-                                data-placement="bottom"
-                                title="{{ project.title }}"
-                            />
-                            {% else %}
-                            <div class="no-image-placeholder">No Image</div>
-                            {% endif %}
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">{{ project.title }}</h5>
-                            <p class="card-text">{{ project.description }}</p>
-                        </div>
-                    </div>
-                </div>
-                {% endif %} {% endif %} {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </section>
 </main>
-
-<style>
-
-</style>
-
 
 {% endblock %}

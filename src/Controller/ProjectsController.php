@@ -15,12 +15,14 @@ class ProjectsController extends AbstractController
             [
                 'title' => 'Card title 0',
                 'image' => 'https://mdbcdn.b-cdn.net/img/new/standard/nature/110.webp',
-                'description' => "Some quick example text for the first card."
+                'description' => "Some quick example text for the first card.",
+                'large' => false
             ],
             [
                 'title' => 'Card title 1',
                 'image' => 'https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp',
-                'description' => "Some quick example text for the second card."
+                'description' => "Some quick example text for the second card.",
+                'large' => false
             ],
             [
                 'title' => 'Card title 2',
@@ -30,27 +32,32 @@ class ProjectsController extends AbstractController
             [
                 'title' => 'Card title 3',
                 'image' => 'https://mdbcdn.b-cdn.net/img/new/standard/nature/113.webp',
-                'description' => "Some quick example text for the third card."
+                'description' => "Some quick example text for the third card.",
+                'large' => true
             ],
             [
                 'title' => 'Card title 4',
                 'image' => 'https://mdbcdn.b-cdn.net/img/new/standard/nature/114.webp',
-                'description' => "Some quick example text for the third card."
+                'description' => "Some quick example text for the third card.",
+                false
             ],
             [
                 'title' => 'Card title 5',
                 'image' => 'https://mdbcdn.b-cdn.net/img/new/standard/nature/115.webp',
-                'description' => "Some quick example text for the third card."
+                'description' => "Some quick example text for the third card.",
+                'large' => false
             ],
             [
                 'title' => 'Card title 7',
                 'image' => 'https://mdbcdn.b-cdn.net/img/new/standard/nature/116.webp',
-                'description' => "Some quick example text for the third card."
+                'description' => "Some quick example text for the third card.",
+                'large' => false
             ],
             [
                 'title' => 'Card title 6',
                 'image' => 'https://mdbcdn.b-cdn.net/img/new/standard/nature/117.webp',
-                'description' => "Some quick example text for the third card."
+                'description' => "Some quick example text for the third card.",
+                'large' => false
             ]
         ];
 
