@@ -1,86 +1,84 @@
 {% extends 'base.html.twig' %} {% block title %}Inicio - Porfolio Personal{% endblock %} {% block body %}
-<main>
-    <section class="inicio py-5">
-        <div class="container">
-            <div class="row justify-content-center align-items-center text-center">
-                <div class="col-md-0">
-                    <h1 class="display-4 text-capitalize fs-1">{{ title }}</h1>
-                    <hr />
-                    <p>Soy Carlos, desarrollador de software apasionado por la creación de soluciones innovadoras y efectivas.</p>
-                    <p>
-                        Con una pasión por aprender y mejorar constantemente, mi objetivo es desarrollar aplicaciones que marquen la diferencia y
-                        superen las expectativas.
-                    </p>
-                    <p>
-                        Explora mis proyectos, conoce más sobre mis habilidades y experiencias, ¡y descubre cómo puedo ayudarte en tu próximo desafío
-                        tecnológico!
-                    </p>
-                    <div class="mt-4">
-                        <a href="{{ path('projects') }}" class="btn btn-primary btn-lg me-3">Ver Proyectos</a>
-                        <a href="{{ path('contact') }}" class="btn btn-outline-primary btn-lg">¡Contáctame!</a>
-                    </div>
+<section class="inicio py-5">
+    <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+            <div class="col-md-0">
+                <h1 class="display-4 text-capitalize fs-1">{{ title }}</h1>
+                <hr />
+                <p>Soy Carlos, desarrollador de software apasionado por la creación de soluciones innovadoras y efectivas.</p>
+                <p>
+                    Con una pasión por aprender y mejorar constantemente, mi objetivo es desarrollar aplicaciones que marquen la diferencia y superen
+                    las expectativas.
+                </p>
+                <p>
+                    Explora mis proyectos, conoce más sobre mis habilidades y experiencias, ¡y descubre cómo puedo ayudarte en tu próximo desafío
+                    tecnológico!
+                </p>
+                <div class="mt-4">
+                    <a href="{{ path('projects') }}" class="btn btn-primary btn-lg me-3">Ver Proyectos</a>
+                    <a href="{{ path('contact') }}" class="btn btn-outline-primary btn-lg">¡Contáctame!</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="habilidades py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4 display-4 text-capitalize fs-1">Habilidades</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <h3 class="text-center">Front-end</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <i class="fab fa-html5"></i> HTML5, <i class="fab fa-css3-alt"></i> CSS3, <i class="fas fa-paint-brush"></i> SASS
-                        </li>
-                        <li class="list-group-item"><i class="fab fa-js"></i> JavaScript</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="text-center">Back-end</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <i class="fab fa-php"></i> PHP, <i class="fab fa-python"></i> Python, <i class="fab fa-java"></i> Java
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fab fa-python"></i> Django, <i class="fa-brands fa-symfony"></i> Symfony,
-                            <i class="fa-brands fa-laravel"></i> Laravel, <i class="fab fa-java"></i> Spring Framework
-                        </li>
-                        <li class="list-group-item"><i class="fas fa-database"></i> MySQL, <i class="fas fa-database"></i> SQLite</li>
-                    </ul>
-                </div>
+<section class="habilidades py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4 display-4 text-capitalize fs-1">Habilidades</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h3 class="text-center">Front-end</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <i class="fab fa-html5"></i> HTML5, <i class="fab fa-css3-alt"></i> CSS3, <i class="fas fa-paint-brush"></i> SASS
+                    </li>
+                    <li class="list-group-item"><i class="fab fa-js"></i> JavaScript</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">Back-end</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <i class="fab fa-php"></i> PHP, <i class="fab fa-python"></i> Python, <i class="fab fa-java"></i> Java
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fab fa-python"></i> Django, <i class="fa-brands fa-symfony"></i> Symfony,
+                        <i class="fa-brands fa-laravel"></i> Laravel, <i class="fab fa-java"></i> Spring Framework
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-database"></i> MySQL, <i class="fas fa-database"></i> SQLite</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="herramientas py-5">
-        <div class="container">
-            <h2 class="text-center mb-4 display-4 text-capitalize fs-1">Herramientas</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-3 text-center">
-                    <ul class="list-group">
-                        <li class="list-group-item"><i class="fa-solid fa-code"></i> Visual Studio Code</li>
-                        <li class="list-group-item"><i class="fa-brands fa-git-alt"></i> Git, SVN</li>
-                        <li class="list-group-item"><i class="fa-solid fa-envelope"></i> Postman, SoapUI</li>
-                        <li class="list-group-item"><i class="fab fa-linux"></i> Linux</li>
-                        <!-- Puedes agregar más herramientas aquí -->
-                    </ul>
-                </div>
+<section class="herramientas py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 display-4 text-capitalize fs-1">Herramientas</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3 text-center">
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fa-solid fa-code"></i> Visual Studio Code</li>
+                    <li class="list-group-item"><i class="fa-brands fa-git-alt"></i> Git, SVN</li>
+                    <li class="list-group-item"><i class="fa-solid fa-envelope"></i> Postman, SoapUI</li>
+                    <li class="list-group-item"><i class="fab fa-linux"></i> Linux</li>
+                    <!-- Puedes agregar más herramientas aquí -->
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="llamado-accion py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h2>¿Listo para trabajar juntos?</h2>
-                    <p>¡Ponte en contacto conmigo para discutir tu próximo proyecto!</p>
-                    <a href="{{ path('contact') }}" class="btn btn-primary btn-lg">¡Contáctame!</a>
-                </div>
+<section class="llamado-accion py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2>¿Listo para trabajar juntos?</h2>
+                <p>¡Ponte en contacto conmigo para discutir tu próximo proyecto!</p>
+                <a href="{{ path('contact') }}" class="btn btn-primary btn-lg">¡Contáctame!</a>
             </div>
         </div>
-    </section>
-</main>
+    </div>
+</section>
 {% endblock %}
