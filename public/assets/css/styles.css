@@ -1,14 +1,12 @@
 :root {
-    --main-bg-color: brown;
+    --main-bg-color: #f5f5f5;
     --secondary-bg-color: #f0f0f0;
     --main-gradiant: rgba(0, 0, 0, 0.05);
+    --card-background: #fff;
     --icon-instagram: #ac2bac;
     --icon-twitter: #333333;
     --icon-linkedin: #0082ca;
     --icon-github: #333333;
-}
-body {
-    background-color: var(--main-gradiant);
 }
 
 /* NAVBAR */
@@ -17,6 +15,21 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
+
+/* HOME */
+.home-container,
+.habilidades-container,
+.herramientas-container,
+.llamado-accion-container {
+    background-color: var(--main-bg-color);
+}
+
+.custom-card {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
 /* PROYECTOS */
 .card-img-top-container {
     overflow: hidden;
@@ -62,7 +75,7 @@ body {
 
 /* FOOTER */
 .copyright-container {
-    background-color: var(--main-gradiant);
+    background-color: var(--main-bg-color);
 }
 
 .container-social .twitter-icon {
