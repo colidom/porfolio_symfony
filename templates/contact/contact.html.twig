@@ -18,7 +18,7 @@
                         <strong><i class="fas fa-phone"></i> Teléfono:</strong> +34 616514696
                     </p>
                     <p>
-                        <strong><i class="fas fa-map-marker-alt"></i> Localicación:</strong>  Tenerife // Madrid
+                        <strong><i class="fas fa-map-marker-alt"></i> Localicación:</strong> Tenerife // Madrid
                     </p>
                 </div>
             </section>
@@ -26,15 +26,15 @@
         <!-- Formulario de contacto -->
         <div class="col-md-6 px-0">
             <section class="py-5 px-4">
-                <form class="row g-3">
+                <form class="row g-3" method="POST">
                     <div class="col-md-6">
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required />
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required />
                     </div>
                     <div class="col-md-6">
-                        <input type="email" class="form-control" id="email" placeholder="Email" required />
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
                     </div>
                     <div class="col-12">
-                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Enviar</button>
