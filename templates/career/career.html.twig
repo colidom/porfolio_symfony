@@ -4,10 +4,10 @@
         <h1 class="display-4 fs-1 text-center">{{ title }}</h1>
         <hr />
 
-        <div class="row mb-5">
+        <div class="row mb-5" data-aos="fade-up">
             {% for experience in experiences %}
-            <div class="col-md-6 mb-4">
-                <div class="card bg-light shadow-sm">
+            <div class="col-md-6 mb-4" data-aos="fade-up">
+                <div class="card mb-4 custom-card">
                     <div class="card-body">
                         <h4>{{ experience.date }}</h4>
                         <p>{{ experience.location }}</p>
@@ -17,9 +17,14 @@
                     </div>
                 </div>
             </div>
-            <br />
             {% endfor %}
         </div>
     </div>
 </section>
+
+{% include 'backtotop.html.twig' %}
+
+<script>
+    AOS.init();
+</script>
 {% endblock %}
