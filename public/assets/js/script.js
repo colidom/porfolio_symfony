@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         offset: 200,
         easing: "ease-in-out",
         anchorPlacement: "center-bottom",
-        delay: 100,
+        delay: 50,
         once: true,
         startEvent: "DOMContentLoaded",
         disable: function () {
