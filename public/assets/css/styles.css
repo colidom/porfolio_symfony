@@ -8,7 +8,8 @@
     --icon-linkedin: #0082ca;
     --icon-github: #333333;
 
-    --soften-blue: rgba(0, 123, 255, 0.7);
+    --soften-blue: rgba(0, 123, 255, 0.947);
+    --soften-blue-timeline: rgba(0, 123, 255, 0.366);
 }
 
 /* NAVBAR */
@@ -142,7 +143,7 @@
     top: 0;
     bottom: 0;
     width: 1px;
-    background: var(--soften-blue);
+    background: var(--soften-blue-timeline);
     left: 50%;
     margin-left: -1px;
 }
@@ -153,7 +154,7 @@
 }
 
 .timeline-item .card {
-    border: 0.2px dotted var(--soften-blue);
+    border: 0.2px dotted var(--soften-blue-timeline);
     padding: 20px;
     background-color: var(--card-background);
     margin: 2%;
