@@ -30,7 +30,10 @@
             {% endfor %}
         </div>
     </div>
-    {% include 'pagination.html.twig' %}
+    {% include 'pagination.html.twig' %} {% include 'backtotop.html.twig' %}
 </section>
+<script>
+    AOS.init();
+</script>
 
 {% endblock %}
