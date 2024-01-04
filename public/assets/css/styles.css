@@ -7,6 +7,8 @@
     --icon-twitter: #333333;
     --icon-linkedin: #0082ca;
     --icon-github: #333333;
+
+    --soften-blue: rgba(0, 123, 255, 0.7);
 }
 
 /* NAVBAR */
@@ -32,7 +34,7 @@
 
 /* TRAYECTORIA */
 .soften-blue {
-    color: rgba(0, 123, 255, 0.7) !important;
+    color: var(--soften-blue) !important;
 }
 
 /* PROYECTOS */
@@ -126,4 +128,33 @@
 
 .grainy-gradient-intro:after {
     background: linear-gradient(90deg, #760dfe 20%, #f51b26, #fd9900);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--soften-blue);
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-item .card {
+    border: 0.2px dotted var(--soften-blue);
+    padding: 20px;
+    background-color: var(--card-background);
+    margin: 2%;
 }
