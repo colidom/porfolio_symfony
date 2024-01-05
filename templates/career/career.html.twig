@@ -9,13 +9,20 @@
             {% for experience in experiences %}
             <div class="timeline-item" data-aos="fade-right">
                 <div class="card mb-4 custom-card bg-white shadow-sm">
-                    <div class="card-body">
-                        <h4 class="text-secondary">{{ experience.date }}</h4>
-                        <p class="text-muted">{{ experience.location }} · {{ experience.modality }}</p>
-                        <p class="fw-bold">{{ experience.position }}</p>
-                        <p class="text-muted">{{ experience.company }}</p>
-                        <p>{{ experience.description }}.</p>
-                        <span><strong class="text-secondary">Aptitudes</strong>: {{ experience.skills }}.</span>
+                    <div class="card-body d-flex">
+                        <!-- Imagen separada del contenido principal -->
+                        <div class="me-5">
+                            <img src="{{ experience.image }}" class="img-fluid small-image" alt="Imagen pequeña" />
+                        </div>
+
+                        <div>
+                            <h4 class="text-secondary mb-3">{{ experience.date }}</h4>
+                            <p class="text-muted">{{ experience.location }} · {{ experience.modality }}</p>
+                            <p class="fw-bold">{{ experience.position }}</p>
+                            <p class="text-muted">{{ experience.company }}</p>
+                            <p>{{ experience.description }}.</p>
+                            <span><strong class="text-secondary">Aptitudes</strong>: {{ experience.skills }}.</span>
+                        </div>
                     </div>
                 </div>
             </div>
