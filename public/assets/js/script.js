@@ -21,14 +21,6 @@ window.addEventListener("scroll", function () {
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init({
         duration: 500,
-        offset: 200,
-        easing: "ease-in-out",
-        anchorPlacement: "center-bottom",
         delay: 50,
-        once: false,
-        startEvent: "DOMContentLoaded",
-        disable: function () {
-            return window.innerWidth < 992;
-        },
     });
 });

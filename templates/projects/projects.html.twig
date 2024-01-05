@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %} {% block title %}Proyectos - Porfolio Personal{% endblock %} {% block body %}
-<section class="proyectos py-5">
+<section class="proyectos py-5" data-aos="fade-up">
     <div class="container">
         <h1 class="display-4 fs-1 text-primary soften-blue">{{ title }}</h1>
         <hr />
@@ -7,7 +7,7 @@
             {% for project in projects %}
             <div class="col-md-{% if project.large is defined and project.large %}8{% else %}4{% endif %} mb-3" data-aos="fade-up">
                 <div class="card">
-                    <div class="card-img-top-container" data-aos="fade-up">
+                    <div class="card-img-top-container">
                         {% if project.image is defined %}
                         <img
                             src="{{ project.image }}"
