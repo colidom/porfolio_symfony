@@ -11,17 +11,21 @@ class ContactController extends AbstractController
     #[Route('/contact', name: 'contact')]
     public function index(): Response
     {
+        $form = [];
 
         if ('POST' === $_SERVER['REQUEST_METHOD']) {
 
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $name = $_POST['name'];
+            $form = array(
+                "name" => $_POST['name'],
+                "email" => $_POST['email'],
+                "message" => nl2br($_POST["message"])
+            );
 
         }
 
         return $this->render('contact/contact.html.twig', [
-            'title' => 'Contacto'
+            'title' => 'Contacto',
+            'form' => $form
         ]);
     }
 }

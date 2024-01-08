@@ -28,13 +28,23 @@
             <section class="py-5 px-4">
                 <form class="row g-3" method="POST">
                     <div class="col-md-6">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required />
+                        <input type="text" class="form-control" id="name" name="name" value="{{ form.name ?? '' }}" placeholder="Nombre" required />
                     </div>
                     <div class="col-md-6">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            value="{{ form.email ?? '' }}"
+                            placeholder="Email"
+                            required
+                        />
                     </div>
                     <div class="col-12">
-                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Mensaje" required>{{
+                            form.message ?? ""
+                        }}</textarea>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Enviar</button>
