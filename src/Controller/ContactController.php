@@ -41,4 +41,10 @@ class ContactController extends AbstractController
             'form' => $form->createView()
         ]);
     }
+
+    public function success(): Response
+    {
+        return $this->render('contact/success.html.twig');
+    }
+
 }
