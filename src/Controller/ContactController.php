@@ -30,7 +30,6 @@ class ContactController extends AbstractController
 
             $mailer->send($email);
 
-            // Ejemplo de redirección a una página de éxito:
             return $this->redirectToRoute('contact_success');
         }
 
