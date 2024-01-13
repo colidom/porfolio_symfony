@@ -10,8 +10,6 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 
-// Asegúrate de tener este archivo creado en src/Form/ContactType.php
-
 class ContactController extends AbstractController
 {
     #[Route('/contact', name: 'contact')]
