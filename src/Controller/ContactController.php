@@ -2,46 +2,32 @@
 
 namespace App\Controller;
 
-use App\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ContactController extends AbstractController
 {
     #[Route('/contact', name: 'contact')]
-    public function index(Request $request, MailerInterface $mailer): Response
+    public function index(): Response
     {
-        $form = $this->createForm(ContactType::class);
+        $form = [];
 
-        $form->handleRequest($request);
+        if ('POST' === $_SERVER['REQUEST_METHOD']) {
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $formData = $form->getData();
+            $form = array(
+                "name" => $_POST['name'],
+                "email" => $_POST['email'],
+                "message" => nl2br($_POST["message"])
+            );
 
-            $email = (new Email())
-                ->from($formData['email'])
-                ->to('soporte@porfolio.com')
-                ->subject('Nuevo mensaje de contacto')
-                ->html($formData['message']);
+            var_dump($form);
 
-            $mailer->send($email);
-
-            return $this->redirectToRoute('contact_success');
         }
 
         return $this->render('contact/contact.html.twig', [
             'title' => 'Contacto',
-            'form' => $form->createView()
+            'form' => $form
         ]);
     }
-
-    public function success(): Response
-    {
-        return $this->render('contact/success.html.twig');
-    }
-
 }
