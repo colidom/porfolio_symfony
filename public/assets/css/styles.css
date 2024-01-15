@@ -69,7 +69,7 @@
 }
 
 .card-img-top-container img {
-    filter: grayscale(100%);
+    filter: grayscale(80%);
 }
 
 .card-img-top-container img:hover {
