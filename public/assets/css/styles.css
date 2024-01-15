@@ -20,12 +20,6 @@
 }
 
 /* HOME */
-.home-container,
-.habilidades-container,
-.herramientas-container,
-.llamado-accion-container {
-    background-color: var(--main-bg-color);
-}
 
 .custom-card {
     background-color: var(--card-background);
@@ -66,6 +60,15 @@
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-bg-color);
+}
+
+.card-img-top-container img {
+    filter: grayscale(80%);
+}
+
+.card-img-top-container img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
 }
 
 /* CONTACTO */
